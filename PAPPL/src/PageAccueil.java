@@ -59,6 +59,7 @@ public class PageAccueil extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				setVisible(false);
+				
 				SelectionCours selection = new SelectionCours();
 				selection.setVisible(true);
 			}
