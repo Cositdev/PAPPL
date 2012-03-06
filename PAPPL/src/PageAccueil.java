@@ -62,7 +62,7 @@ public class PageAccueil extends JFrame {
 				SelectionCours selection = new SelectionCours();
 				selection.setVisible(true);
 			}
-		});
+		});  
 		JPanel milieuxbas = new JPanel();
 		milieuxbas.setLayout(new FlowLayout());
 		

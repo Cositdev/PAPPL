@@ -34,6 +34,8 @@ public class SelectionCours extends JFrame {
 		listeMatieres.add("COPIN");
 		listeMatieres.add("GELOL");
 		listeMatieres.add("MESTR");
+		listeMatieres.add("PATAT");
+		
 		
 		listeGroupes = new ArrayList<String>();
 		listeGroupes.add("EI1_Gr1");
