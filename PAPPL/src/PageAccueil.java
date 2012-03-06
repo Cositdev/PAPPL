@@ -65,10 +65,10 @@ public class PageAccueil extends JFrame {
 			}
 		});  
 		JPanel milieuxbas = new JPanel();
-		milieuxbas.setLayout(new FlowLayout());
+		milieuxbas.setLayout(new FlowLayout()); 
 		
 		JButton majEtu = new JButton("Télécharger la liste des étudiants");
-		JButton majPhoto= new JButton("Télécharger les phtos des étudiants");
+		JButton majPhoto= new JButton("Télécharger les photos des étudiants");
 
 		milieux.add(majEtu);
 		milieux.add(majPhoto);
