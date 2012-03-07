@@ -29,12 +29,12 @@ public class SelectionCours extends JFrame {
 	public SelectionCours() {
 		
 		listeMatieres = new ArrayList<String>();
-		listeMatieres.add("ANUME");
-		listeMatieres.add("SRETI");
-		listeMatieres.add("COPIN");
-		listeMatieres.add("GELOL");
-		listeMatieres.add("MESTR");
-		listeMatieres.add("PATAT");
+		listeMatieres.add("ANUME");listeMatieres.add("EZEZE");listeMatieres.add("FGDFS");listeMatieres.add("VCXV");
+		listeMatieres.add("SRETI");listeMatieres.add("PATAT1");listeMatieres.add("PATAT6");listeMatieres.add("VCXVV");
+		listeMatieres.add("COPIN");listeMatieres.add("PATAT2");listeMatieres.add("PATAT7");listeMatieres.add("UYUTR");
+		listeMatieres.add("GELOL");listeMatieres.add("PATAT3");listeMatieres.add("PATAT8");listeMatieres.add("PATATH");
+		listeMatieres.add("MESTR");listeMatieres.add("PATAT4");listeMatieres.add("PATAT9");listeMatieres.add("PATATZ");
+		listeMatieres.add("PATAT");listeMatieres.add("PATAT5");listeMatieres.add("PATAT0");listeMatieres.add("PATATQ");
 		
 		
 		listeGroupes = new ArrayList<String>();
