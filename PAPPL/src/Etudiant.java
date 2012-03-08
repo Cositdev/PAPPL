@@ -11,16 +11,22 @@ public class Etudiant {
 	protected String prenom;
 	protected String groupe;
 	protected String lienPhoto;
-	protected int numeroMifare;
-	protected int numeroEtudiant;
+	protected String numeroMifare;
+	protected String numeroEtudiant;
+	protected Boolean present = false;
 	
-	public Etudiant(String nom, String prenom, String groupe, String lienPhoto, int numeroMifare, int numeroEtudiant) {
+	public Etudiant(String nom, String prenom, String groupe, String lienPhoto, String numeroMifare, String numeroEtudiant) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.groupe = groupe;
 		this.lienPhoto = lienPhoto;
 		this.numeroMifare = numeroMifare;
 		this.numeroEtudiant = numeroEtudiant;
+	}
+	public Etudiant(String nom, String numeroMifare){
+		this.nom = nom;
+		this.numeroMifare = numeroMifare;
+		this.present=false;
 	}
 	
 	public boolean telechargerPhoto() {
@@ -44,4 +50,48 @@ public class Etudiant {
 			return false;
 		}
 	}
+	public String getNom(){
+		return this.nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public String getGroupe() {
+		return groupe;
+	}
+	public void setGroupe(String groupe) {
+		this.groupe = groupe;
+	}
+	public String getLienPhoto() {
+		return lienPhoto;
+	}
+	public void setLienPhoto(String lienPhoto) {
+		this.lienPhoto = lienPhoto;
+	}
+	public String getNumeroMifare() {
+		return numeroMifare;
+	}
+	public void setNumeroMifare(String numeroMifare) {
+		this.numeroMifare = numeroMifare;
+	}
+	public String getNumeroEtudiant() {
+		return numeroEtudiant;
+	}
+	public void setNumeroEtudiant(String numeroEtudiant) {
+		this.numeroEtudiant = numeroEtudiant;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public Boolean getPresent() {
+		return present;
+	}
+	public void setPresent(Boolean present) {
+		this.present = present;
+	}
+	
+	
 }

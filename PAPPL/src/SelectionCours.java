@@ -69,7 +69,7 @@ public class SelectionCours extends JFrame {
 				remplireComboMatiere();
 				milieux1.add(jlMatiere);
 				milieux1.add(jcMatiere);
-			milieux.add(milieux1);
+				milieux.add(milieux1);
 			
 			//Gestion du milieu 2
 				JPanel milieux2 = new JPanel();
@@ -95,6 +95,17 @@ public class SelectionCours extends JFrame {
 			JPanel bas = new JPanel();
 			bas.setLayout(new FlowLayout());
 			JButton validerChoix = new JButton("Valider");
+			validerChoix.addMouseListener(new MouseAdapter() {
+				@Override
+				public void mouseClicked(MouseEvent arg0) {
+					setVisible(false); 
+					
+					ControlePresence controlePresence= new ControlePresence();
+					controlePresence.setVisible(true);
+					//controlePresence.run();
+				}
+			});
+
 			JButton retour = new JButton("Retour");
 			retour.addMouseListener(new MouseAdapter() {
 				@Override
@@ -121,4 +132,5 @@ public class SelectionCours extends JFrame {
 			jcGroupe.addItem(s);
 		}
 	}
+	
 }
